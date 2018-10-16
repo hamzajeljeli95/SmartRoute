@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SmartRoute</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY CONTENT</string>
+    <string name="nom">Nom</string>
+    <string name="prenom">Prénom</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="creer">Créer compte</string>
+    <string name="connection">Se connecter</string>
+    <string name="inscri">Inscription</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pwait">Veuillez Patienter</string>
+    <string name="se_deconnecter">Se deconnecter</string>
+    <string-array name="car_nbr_place">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string name="title_item_list">Resultat recherche</string>
+    <string name="title_item_detail"></string>
+    <!--Détails Covoiturage-->
+</resources>

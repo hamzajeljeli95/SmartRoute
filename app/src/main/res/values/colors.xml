@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#e0e0e0</color>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorAccent">#ff9800</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black">#000000</color>
+    <color name="bouton">#ffab40</color>
+    <color name="bouton2">#e0e0e0</color>
+    <color name="list">#66000000</color>
+</resources>

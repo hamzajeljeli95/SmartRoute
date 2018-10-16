@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compte"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.nawras.smartroute.Inscri2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:weightSum="10">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="278dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_weight="2.63"
+                app:srcCompat="@drawable/logo_b" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.63"
+                android:text="Information sur la véhicule"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic" />
+
+            <!-- Dropdowns -->
+            <LinearLayout
+                android:layout_width="@dimen/dropdown_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="serif"
+                    android:text="Catégorie"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+
+                <Spinner
+                    android:id="@+id/sp1"
+                    android:layout_width="@dimen/spinner_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:fontFamily="serif"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dropdown_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="serif"
+                    android:text="Marque"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+
+                <Spinner
+                    android:id="@+id/sp3"
+                    android:layout_width="@dimen/spinner_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:fontFamily="serif"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dropdown_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="serif"
+                    android:text="Modéle"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+
+                <Spinner
+                    android:id="@+id/sp4"
+                    android:layout_width="@dimen/spinner_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:fontFamily="serif"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dropdown_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="serif"
+                    android:text="Motorisation"
+                    android:textSize="16sp"
+                    android:textStyle="normal|bold" />
+
+                <Spinner
+                    android:id="@+id/sp2"
+                    android:layout_width="@dimen/spinner_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textAlignment="gravity"
+                    android:layout_gravity="right"
+                    android:fontFamily="serif"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Dropdowns -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnIgnorer"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="35dp"
+                    android:background="#999"
+                    android:elevation="0dp"
+                    android:fontFamily="serif"
+                    android:onClick="ignorer"
+                    android:text="Ignorer"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btncreer"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/bouton"
+                    android:elevation="0dp"
+                    android:fontFamily="serif"
+                    android:onClick="creer"
+                    android:text="Suivant"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

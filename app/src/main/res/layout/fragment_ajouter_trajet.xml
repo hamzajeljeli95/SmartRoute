@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context="com.example.nawras.smartroute.Ajouter_trajet">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2.63"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:weightSum="10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+        <EditText
+            android:id="@+id/Depart"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:breakStrategy="high_quality"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Départ"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Arriver"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Destination"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/PointDepart"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:breakStrategy="high_quality"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Point départ"
+            android:inputType="text"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/PointArriver"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Point destination"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/DateC"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Date (dd-MM-yyyy)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/HeureC"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Heure (hh:mm)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/prixEdit"
+            android:layout_width="232dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Prix"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/Cond"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Conditions"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="83dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:text="Nombre de places"
+                android:textSize="16sp"
+                android:textStyle="normal|bold" />
+
+            <Spinner
+                android:id="@+id/spinn_Nbp"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ems="10"
+                android:entries="@array/car_nbr_place"
+                android:fontFamily="serif"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/validerAjouterCovoiturage"
+            style="@android:style/Widget.Button"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="35dp"
+            android:background="@color/bouton"
+            android:elevation="0dp"
+            android:fontFamily="serif"
+            android:text="Ajouter"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@mipmap/add_loc"
+            android:title="Ajouter trajet" />
+        <item
+            android:id="@+id/nav_chercher"
+            android:icon="@mipmap/cher_loc"
+            android:title="Chercher trajet" />
+        <item
+            android:id="@+id/nav_trajet"
+            android:icon="@mipmap/mes_loc"
+            android:title="Mes trajets" />
+
+
+
+
+
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@mipmap/profil"
+                android:title="Profile" />
+            <item
+            android:id="@+id/nav_car"
+            android:icon="@mipmap/car"
+            android:title="Véhicule" />
+            <item
+                android:id="@+id/nav_msg"
+                android:icon="@mipmap/message"
+                android:title="Message" />
+    </group>
+
+
+</menu>
